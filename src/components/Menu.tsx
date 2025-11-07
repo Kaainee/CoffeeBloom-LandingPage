@@ -1,17 +1,15 @@
-"use client";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { FaDatabase, FaCode, FaReact } from "react-icons/fa";
 
-const Services = () => {
+const Menu = () => {
   return (
-    <section id="services" className="theme-color">
+    <section id="Menu" className="theme-color">
       <Container>
         <h2 className="text-center mb-5">Best Seller</h2>
         <Row className="justify-content-center">
           <Col md={4} className="mb-5 d-flex">
             <Card className="content-card text-center">
               <div className=" mt-2">
-                <img src="/ori.jpg" alt="ori" className="menu-image" />
+                <img src="/ori.jpg" alt="ori" className="menu-image img-fluid" />
               </div>
               <Card.Body className="pt-4">
                 <Card.Title as="h3" className="content-card-title mb-3">
@@ -27,7 +25,7 @@ const Services = () => {
           <Col md={4} className="mb-5 d-flex">
             <Card className="content-card text-center">
               <div className=" mt-2">
-                <img src="/keju.jpg" alt="keju" className="menu-image" />
+                <img src="/keju.jpg" alt="keju" className="menu-image img-fluid" />
               </div>
               <Card.Body className="pt-4">
                 <Card.Title as="h3" className="content-card-title mb-3">
@@ -43,7 +41,7 @@ const Services = () => {
           <Col md={4} className="mb-5 d-flex">
             <Card className="content-card text-center">
               <div className=" mt-2">
-                <img src="/coklat.jpg" alt="coklat" className="menu-image" />
+                <img src="/coklat.jpg" alt="coklat" className="menu-image img-fluid" />
               </div>
               <Card.Body className="pt-4">
                 <Card.Title as="h3" className="content-card-title mb-3">
@@ -61,4 +59,4 @@ const Services = () => {
     </section>
   );
 };
-export default Services;
+export default Menu;

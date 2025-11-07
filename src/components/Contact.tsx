@@ -1,4 +1,3 @@
-"use client";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 

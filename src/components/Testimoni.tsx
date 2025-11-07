@@ -1,9 +1,8 @@
-"use client";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import Image from "next/image";
 import { FaStar } from "react-icons/fa";
+import "../globals.css";
 
-const testimonialsData = [
+const TestimoniData = [
   {
     id: 1,
     name: "Dhonnan",
@@ -33,17 +32,17 @@ const testimonialsData = [
   },
 ];
 
-const Testimonials = () => {
+const Testimoni = () => {
   return (
-    <section id="testimonials" className="theme-color">
+    <section id="Testimoni" className="theme-color">
       <h2 className="text-center mb-5 ">Apa Kata Pelanggan Kami</h2>
       <br></br>
       <Container>
         <Row className="justify-content-center">
-          {testimonialsData.map((testimonial) => (
+          {TestimoniData.map((testimonial) => (
             <Col key={testimonial.id} md={4} className="mb-4 d-flex">
               <Card className="testimonial-card">
-                <Image
+                <img
                   src={testimonial.avatar}
                   alt={`Avatar of ${testimonial.name}`}
                   width={100}
@@ -74,4 +73,4 @@ const Testimonials = () => {
     </section>
   );
 };
-export default Testimonials;
+export default Testimoni;

@@ -1,4 +1,8 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 :root {
   --color-sky-dark: #fdecd6;
@@ -81,7 +85,7 @@ h2 {
   margin-bottom: 3rem;
 }
 
-#testimonials {
+#Testimoni {
   /* padding-top: 100px; kasih ruang dari atas */
   padding-bottom: 100px; /* kasih ruang bawah biar lega */
 }

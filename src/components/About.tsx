@@ -1,5 +1,3 @@
-// src/components/About.tsx
-"use client";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaRegBuilding, FaBullseye, FaTasks } from "react-icons/fa";
 
