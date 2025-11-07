@@ -9,7 +9,7 @@ const TestimoniData = [
     title: "Mahasiswa TRPL, Politeknik Astra",
     comment:
       "Roti di sini selalu Fresh From The Oven!. Garing di luar, lembut di dalam. Jadi favorit buat sarapan di kampus!",
-    avatar: "/chef.png",
+    avatar: "./chef.png",
     rating: 5,
   },
   {
@@ -18,7 +18,7 @@ const TestimoniData = [
     title: "Saya Sendiri",
     comment:
       "Dari tampilannya aja udah menggoda banget. Begitu dicoba, perpaduan rasa manis dan gurihnya pas banget. Definitely worth the hype!",
-    avatar: "/sandi.png",
+    avatar: "./sandi.png",
     rating: 5,
   },
   {
@@ -27,7 +27,7 @@ const TestimoniData = [
     title: "Saya Pribadi",
     comment:
       "Udah 2 tahun langganan, belum pernah kecewa. Mereka selalu jaga kualitas dan rasa. Setiap gigitan tuh bikin nostalgia ke roti masa kecil.",
-    avatar: "/sapri.png",
+    avatar: "./sapri.png",
     rating: 4,
   },
 ];

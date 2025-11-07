@@ -9,7 +9,7 @@ const Menu = () => {
           <Col md={4} className="mb-5 d-flex">
             <Card className="content-card text-center">
               <div className=" mt-2">
-                <img src="/ori.jpg" alt="ori" className="menu-image img-fluid" />
+                <img src="./ori.jpg" alt="ori" className="menu-image img-fluid" />
               </div>
               <Card.Body className="pt-4">
                 <Card.Title as="h3" className="content-card-title mb-3">
@@ -25,7 +25,7 @@ const Menu = () => {
           <Col md={4} className="mb-5 d-flex">
             <Card className="content-card text-center">
               <div className=" mt-2">
-                <img src="/keju.jpg" alt="keju" className="menu-image img-fluid" />
+                <img src="./keju.jpg" alt="keju" className="menu-image img-fluid" />
               </div>
               <Card.Body className="pt-4">
                 <Card.Title as="h3" className="content-card-title mb-3">
@@ -41,7 +41,7 @@ const Menu = () => {
           <Col md={4} className="mb-5 d-flex">
             <Card className="content-card text-center">
               <div className=" mt-2">
-                <img src="/coklat.jpg" alt="coklat" className="menu-image img-fluid" />
+                <img src="./coklat.jpg" alt="coklat" className="menu-image img-fluid" />
               </div>
               <Card.Body className="pt-4">
                 <Card.Title as="h3" className="content-card-title mb-3">
