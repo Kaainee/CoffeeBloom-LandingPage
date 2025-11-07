@@ -60,12 +60,12 @@ const About = () => {
                   buatan.
                   <br></br>
                   <br></br>
-                  2. Mengutamakan proses pembuatan roti secara handmade
-                  dengan sentuhan cinta
+                  2. Mengutamakan proses pembuatan roti secara handmade dengan
+                  sentuhan cinta
                   <br></br>
                   <br></br>
-                  3. Menyediakan produk roti yang beragam
-                  untuk memenuhi selera semua pelanggan.
+                  3. Menyediakan produk roti yang beragam untuk memenuhi selera
+                  semua pelanggan.
                 </Card.Text>
               </Card.Body>
             </Card>

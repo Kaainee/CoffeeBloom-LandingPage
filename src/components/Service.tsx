@@ -18,7 +18,8 @@ const Services = () => {
                   Original Coffee Bun
                 </Card.Title>
                 <Card.Text>
-                  Roti Lembut dengan Cream Kopi isian Margarine klasik gurih yang menggoda selera
+                  Roti Lembut dengan Cream Kopi isian Margarine klasik gurih
+                  yang menggoda selera
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -33,7 +34,8 @@ const Services = () => {
                   Cheese Coffee bun
                 </Card.Title>
                 <Card.Text>
-                  Roti Lembut dengan Cream Kopi isian Keju melt yang creamy gurih dan bikin kecanduan
+                  Roti Lembut dengan Cream Kopi isian Keju melt yang creamy
+                  gurih dan bikin kecanduan
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -48,7 +50,8 @@ const Services = () => {
                   Chocolate Coffee bun
                 </Card.Title>
                 <Card.Text>
-                  Roti Lembut dengan Cream Kopi isian Chocolate melt manis dan lezat
+                  Roti Lembut dengan Cream Kopi isian Chocolate melt manis dan
+                  lezat
                 </Card.Text>
               </Card.Body>
             </Card>

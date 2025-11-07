@@ -1,12 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './globals.css';
-import AppNavbar from '@/components/NavBar';
-import { Container } from 'react-bootstrap';
-import Footer from '@/components/Footer';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./globals.css";
+import AppNavbar from "@/components/NavBar";
+import { Container } from "react-bootstrap";
+import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: 'CoffeeBloom',
-  description: 'Landing Page CoffeeBloom',
+  title: "CoffeeBloom",
+  description: "Landing Page CoffeeBloom",
 };
 
 export default function RootLayout({
