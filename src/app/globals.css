@@ -1,0 +1,262 @@
+@import "tailwindcss";
+
+:root {
+  --color-sky-dark: #fdecd6;
+  --color-sun-primary: #ff7e5f;
+  --color-sun-secondary: #feb47b;
+  --bintang-testimoni: #f9d423;
+
+  --color-utama-body: #4a4a4a;
+  --color-text-putih: #f0f0f0;
+  --color-background-light: #fdf6e3;
+  --color-border-light: #e0dace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: #fbcea1;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+@media (prefers-color-scheme: dark) { 
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: #fbcea1; /* DIUBAH : Latar belakang utama menjadi krem */
+  color: var(--color-utama-body);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif; /* Font lebih modern */
+  padding-top: 56px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+section {
+  padding: 80px 0;
+}
+
+h2 {
+  font-weight: bold;
+  color: var(--color-sky-dark);
+}
+.section-light {
+  background-color: var(--color-utama-body);
+}
+.theme-color {
+  background-color: #fbcea1;
+  color: #2c1b0a;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #2c1b0a; /* krem lembut, gampang dibaca di atas coklat */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffbe54; /* warna butter pas dihover */
+}
+
+.navbar-brand {
+  color: #ffbe54 !important;
+  -webkit-text-stroke: 1px #2c1b0a;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand:hover {
+  color: #ffbe54 !important;
+}
+
+.text-center {
+  color: #2c1b0a
+}
+
+.klien {
+  margin-bottom: 3rem;
+}
+
+#testimonials {
+  /* padding-top: 100px; kasih ruang dari atas */
+  padding-bottom: 100px; /* kasih ruang bawah biar lega */
+}
+
+.text-gold-highlight {
+  color: var(--bintang-testimoni);
+  -webkit-text-stroke: 3px #2c1b0a;
+}
+
+.hero-image-background {
+  position: relative;
+  color: var(--color-text-putih);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-image-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.hero-image-background::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 600px;
+  height: 700px;
+  background-image: url("/chef.png"); /* ubah ke nama file kamu */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  z-index: 2;
+}
+
+/* udh diganti foto */
+.hero-sunset-gradient {
+  position: relative;
+  color: var(--color-text-putih);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-sun-secondary);
+  background: linear-gradient(
+    to right,
+    var(--color-sun-primary),
+    var(--color-sun-secondary)
+  );
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: left; /* biar paragraf bisa rata kiri */
+  max-width: 600px; /* biar teks gak melebar ke kiri */
+  margin-left: 40%; /* geser seluruh konten ke kanan */
+}
+
+.content-card {
+  border: 1px solid var(--color-border-light);
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.content-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.content-card-title {
+  color: #2c1b0a;
+  font-weight: bold;
+}
+.content-icon-wrapper {
+  font-size: 3rem;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(
+    to right,
+    var(--color-sun-primary),
+    var(--color-sun-secondary)
+  );
+  color: var(--color-text-putih);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(255, 126, 95, 0.4);
+}
+
+.testimonial-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid var(--color-background-light);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: cover;
+}
+.testimonial-rating {
+  color: var(--bintang-testimoni);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.testimonial-comment {
+  font-style: italic;
+  color: #555;
+  position: relative;
+  padding: 0 1rem;
+}
+.testimonial-comment::before {
+  content: "\201C";
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  color: var(--color-sun-primary);
+  opacity: 0.2;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+}
+
+.btn-sunset {
+  background: linear-gradient(
+    to right,
+    var(--color-sun-primary),
+    var(--color-sun-secondary)
+  );
+  border: none;
+  color: var(--color-text-putih);
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-sunset:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 126, 95, 0.4);
+  color: var(--color-text-putih);
+}
+
+.portfolio-card {
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.portfolio-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.portfolio-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
