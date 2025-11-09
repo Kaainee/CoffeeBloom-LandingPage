@@ -41,43 +41,45 @@ const Testimoni = () => {
       exit={{ opacity: 0, x: -50 }}
       transition={{ duration: 0.5 }}
     >
-    <section id="Testimoni" className="theme-color">
-      <h2 className="text-center mb-5 ">Apa Kata Pelanggan Kami</h2>
-      <br></br>
-      <Container>
-        <Row className="justify-content-center">
-          {TestimoniData.map((testimonial) => (
-            <Col key={testimonial.id} md={4} className="mb-4 d-flex">
-              <Card className="testimonial-card">
-                <img
-                  src={testimonial.avatar}
-                  alt={`Avatar of ${testimonial.name}`}
-                  width={100}
-                  height={100}
-                  className="testimonial-avatar"
-                />
-                <Card.Body>
-                  <Card.Title as="h4" className="mt-4">
-                    {testimonial.name}
-                  </Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">
-                    {testimonial.title}
-                  </Card.Subtitle>
-                  <div className="testimonial-rating">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <FaStar key={i} />
-                    ))}
-                  </div>
-                  <blockquote className="testimonial-comment">
-                    {testimonial.comment}
-                  </blockquote>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </section>
+      <section id="Testimoni" className="theme-color">
+        <h2 className="text-center mb-5 ">Apa Kata Pelanggan Kami</h2>
+        <br></br>
+        <Container>
+          <Row className="justify-content-center">
+            {TestimoniData.map((testimonial) => (
+              <Col key={testimonial.id} md={4} className="mb-4 d-flex">
+                <Card className="testimonial-card">
+                  <img
+                    src={testimonial.avatar}
+                    alt={`Avatar of ${testimonial.name}`}
+                    width={100}
+                    height={100}
+                    className="testimonial-avatar"
+                  />
+                  <Card.Body>
+                    <Card.Title as="h4" className="mt-4">
+                      {testimonial.name}
+                    </Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">
+                      {testimonial.title}
+                    </Card.Subtitle>
+                    <div className="testimonial-rating">
+                      {Array.from({ length: testimonial.rating }).map(
+                        (_, i) => (
+                          <FaStar key={i} />
+                        )
+                      )}
+                    </div>
+                    <blockquote className="testimonial-comment">
+                      {testimonial.comment}
+                    </blockquote>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
     </motion.div>
   );
 };
