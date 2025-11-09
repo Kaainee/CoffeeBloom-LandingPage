@@ -1,6 +1,7 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
 import "../globals.css";
+import { motion } from "framer-motion";
 
 const TestimoniData = [
   {
@@ -34,6 +35,12 @@ const TestimoniData = [
 
 const Testimoni = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -50 }}
+      transition={{ duration: 0.5 }}
+    >
     <section id="Testimoni" className="theme-color">
       <h2 className="text-center mb-5 ">Apa Kata Pelanggan Kami</h2>
       <br></br>
@@ -71,6 +78,7 @@ const Testimoni = () => {
         </Row>
       </Container>
     </section>
+    </motion.div>
   );
 };
 export default Testimoni;

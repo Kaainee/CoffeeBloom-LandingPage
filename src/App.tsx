@@ -6,9 +6,11 @@ import AboutPage from "./pages/AboutPage";
 import MenuPage from "./pages/MenuPage";
 import TestimoniPage from "./pages/TestimoniPage";
 import ContactPage from "./pages/ContactPage";
+import { AnimatePresence } from "framer-motion";
 
 export default function App() {
   return (
+    <AnimatePresence mode="wait">
     <Router>
       <NavBar />
       <Routes>
@@ -20,5 +22,6 @@ export default function App() {
       </Routes>
       <Footer />
     </Router>
+    </AnimatePresence>
   );
 }

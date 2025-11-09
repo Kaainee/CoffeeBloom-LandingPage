@@ -1,8 +1,15 @@
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaRegBuilding, FaBullseye, FaTasks } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -50 }}
+      transition={{ duration: 0.5 }}
+    >
     <section id="about" className="theme-color">
       <Container>
         <h2 className="text-center title mb-5">Tentang Kami</h2>
@@ -71,6 +78,7 @@ const About = () => {
         </Row>
       </Container>
     </section>
+    </motion.div>
   );
 };
 export default About;

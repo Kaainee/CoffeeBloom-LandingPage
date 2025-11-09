@@ -1,8 +1,15 @@
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -50 }}
+      transition={{ duration: 0.5 }}
+    >
     <section id="contact" className="theme-color">
       <Container>
         <h2 className="text-center mb-5">Hubungi Kami</h2>
@@ -71,6 +78,7 @@ const Contact = () => {
         </Row>
       </Container>
     </section>
+    </motion.div>
   );
 };
 export default Contact;
