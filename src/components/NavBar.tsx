@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AppNavbar = () => {
   return (
-    <Navbar className="theme-color" variant="dark" expand="lg" fixed="top">
+    <Navbar className="navbar-theme" variant="dark" expand="lg" fixed="top">
       <Container>
         <Navbar.Brand as={Link} to="/">
           CoffeeBloom

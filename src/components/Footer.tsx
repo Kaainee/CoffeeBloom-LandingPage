@@ -2,10 +2,10 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer className="theme-color navbar-dark py-4">
+    <footer className="navbar-theme footer-text-color py-4">
       <Container>
-        <Row>
-          <Col md={6}>
+        <Row className="navbar-dark">
+          <Col className="navbar-dark" md={6}>
             <h5>CoffeeBloom</h5>
             <p>Making good bread since 2025.</p>
           </Col>
